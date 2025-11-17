@@ -4,4 +4,4 @@ server = FastAPI()
 
 @server.get("/")
 def home():
-    return{"message": "Welcome home"}
+    return{"message": "Server Reached."}
