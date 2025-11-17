@@ -1,5 +1,5 @@
 from fastapi import FastAPI, Request
-from waf.pipeline import run_pipeline
+from waf.pipelines import run_pipeline
 
 app = FastAPI()
 
