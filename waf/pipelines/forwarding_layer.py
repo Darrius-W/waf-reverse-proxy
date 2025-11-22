@@ -1,6 +1,8 @@
 import httpx
 from fastapi import Response
 
+# Take incoming request, forward it to the backend by mirroring the
+# original request, then return the backend response to the user
 async def forward_to_backend(request):
     backend_url = "http://localhost:8001" + request.url.path
 
